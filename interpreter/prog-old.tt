@@ -1,0 +1,17 @@
+bob()
+var hi : string := "hi there"
+hi := "hi bob"
+bob := hi
+ed := fred
+if bob = 52.4 then
+	hi(3) := 'f'
+end if
+fcn colon() : pointer to Token
+        consume()
+        if c = '=' then
+            consume()
+            result newToken(tokens.ASSIGN,":=")
+        else
+            result newToken(tokens.TYPEDECL,":")
+	end if
+end colon

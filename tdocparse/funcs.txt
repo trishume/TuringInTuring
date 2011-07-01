@@ -1,0 +1,117 @@
+Concurrency.empty empty (variableReference) : boolean 
+Config.Display Config.Display (displayCode : int) : int 
+Config.Lang Config.Lang (langCode : int) : int 
+Config.Machine Config.Machine (machineCode : int) : int 
+Dir.Exists Dir.Exists (directoryPathName : string) : boolean
+Dir.Get Dir.Get (streamNumber : int) : string 
+Dir.Open Dir.Open (directoryPathName : string) : int 
+Error.Msg Error.Msg (errorCode : int) : string 
+Error.Str Error.Str (errorCode : int) : string 
+File.DiskFree File.DiskFree (pathName : string) : int 
+File.Exists File.Exists (pathName : string) : boolean
+File.FullPath File.FullPath (pathName : string) : string
+File.Parent File.Parent (pathName : string) : string
+Font.Draw Font.Draw (txtStr : string, x, y, fontID, Color : int) : int 
+Font.GetStyle Font.GetStyle (fontName : string, var bold, italic, underline : boolean) : string
+Font.New Font.New (fontSelectStr : string) : int 
+Font.Width Font.Width (txtStr : string, fontID : int) : int
+GUI.Choose GUI.Choose (title, msg1, msg2, msg3 : string, btn1, btn2, btn3 : string) : int
+GUI.CreateCanvas GUI.CreateCanvas (x, y, width, height : int) : int
+GUI.CreateFrame GUI.CreateFrame (x1, y1, x2, y2, kind : int) : int
+GUI.CreateLabel GUI.CreateLabel (x, y : int, text : string) : int
+GUI.CreateLabelFull GUI.CreateLabelFull (x, y : int, text : string, width, height, alignment, fontID : int) : int
+GUI.CreateLabelledFrame GUI.CreateLabelledFrame (x1, y1, x2, y2, kind : int, text : string) : int
+GUI.CreateLine GUI.CreateLine (x1, y1, x2, y2, kind : int) : int
+GUI.CreateMenu GUI.CreateMenu (name : string) : int
+GUI.CreatePicture GUI.CreatePicture (x, y, picture : int, mergePic : boolean) : int
+GUI.CreateTextBox GUI.CreateTextBox (x, y, width, height : int) : int
+GUI.CreateTextBoxFull GUI.CreateTextBoxFull (x, y, width, height : int, border, fontID : int) : int
+GUI.GetCheckBox GUI.GetCheckBox (widgetID : int) : boolean
+GUI.GetHeight GUI.GetHeight (widgetID : int) : int
+GUI.GetSliderValue GUI.GetSliderValue (widgetID : int) : int
+GUI.GetText GUI.GetText (widgetID : int) : string
+GUI.GetWidth GUI.GetWidth (widgetID : int) : int
+GUI.GetX GUI.GetX (widgetID : int) : int
+GUI.GetY GUI.GetY (widgetID : int) : int
+GUI.OpenFile GUI.OpenFile (title : string) : string
+GUI.OpenFileFull GUI.OpenFileFull (title, filter : string, startDir : string) : string
+GUI.SaveFile GUI.SaveFile (title : string) : string
+GUI.SaveFileFull GUI.SaveFileFull (title, filter : string, startDir : string) : string
+Math.Distance Math.Distance (x1, y1, x2, y2 : real) : real
+Math.DistancePointLine Math.Distance (px, py : real, x1, y1, x2, y2 : real) : real
+Mouse.ButtonMoved Mouse.ButtonMoved (motion : string) : boolean 
+Net.BytesAvailable Net.BytesAvailable (netStream : int) : int
+Net.CharAvailable Net.CharAvailable (netStream : int) : boolean
+Net.HostAddressFromName Net.HostAddressFromName (hostName : string) : string
+Net.HostNameFromAddress Net.HostNameFromAddress (hostAddr : string) : string
+Net.LineAvailable Net.LineAvailable (netStream : int) : boolean
+Net.OpenConnection Net.OpenConnection (netAddr : string, port : int) : int
+Net.OpenURLConnection Net.OpenURLConnection (urlAddr : string) : int
+Net.TokenAvailable Net.TokenAvailable (netStream : int) : boolean
+Net.WaitForConnection Net.WaitForConnection (port : int, var netAddr : string) : int
+PC.ParallelGet PC.ParallelGet (port : int) : nat1
+Pic.Blend Pic.Blend (picID1, picID2, percent : int) : int
+Pic.Blur Pic.Blur (picId, blurFactor : int) : int
+Pic.FileNew Pic.FileNew (fileName : string) : int 
+Pic.Flip Pic.Flip (picID : int) : int
+Pic.Height Pic.Height (picID : int) : int 
+Pic.Mirror Pic.Mirror (picID : int) : int
+Pic.New Pic.New (x1, y1, x2, y2 : int) : int 
+Pic.Rotate Pic.Rotate (picID, angle, x, y : int) : int
+Pic.Scale Pic.Scale (picID, newWidth, newHeight : int) : int
+Pic.Width Pic.Width (picID : int) : int 
+RGB.AddColor RGB.AddColor (redComp, greenComp, blueComp : real) : int 
+RGB.AddColour RGB.AddColour (redComp, greenComp, blueComp : real) : int 
+Rand.Int Rand.Int (low, high : int) : int 
+Sprite.New Sprite.New (picID : int) : int
+Str.Lower Str.Lower (s : string) : string
+Str.Trim Str.Trim (s : string) : string
+Str.Upper Str.Upper (s : string) : string
+Sys.Exec Sys.Exec (command : string) : boolean 
+Sys.FetchArg System.FetchArg (i : int) : string
+Sys.GetEnv Sys.GetEnv (symbol : string) : string 
+Time.DateSec Time.DateSec (dateString : string) : int 
+Time.PartsSec Time.PartsSec (year, month, day, hour, minute, second : int) : int
+Time.SecDate Time.SecDate (timeInSecs : int) : string 
+Time.SecStr Time.SecStr (timeInSecs : int, formatString : string) : string
+View.WhatDotColor View.WhatDotColor (x, y : int) : int 
+View.WhatDotColour View.WhatDotColour (x, y : int) : int 
+Window.Open Window.Open (setUpString : string) : int 
+abs abs (r : real) : real  or  abs (i : int) : int 
+arccos arccos (r : real) : real 
+arccosd arccosd (r : real) : real 
+arcsin arcsin (r : real) : real 
+arcsind arcsind (r : real) : real 
+arctan arctan (r : real) : real 
+arctand arctand (r : real) : real 
+buttonmoved buttonmoved (motion : string) : boolean 
+ceil ceil (r : real) : int 
+chr chr (i : int) : char 
+cos cos (r : real) : real 
+cosd cosd (r : real) : real 
+empty empty (variableReference) : boolean 
+exp exp (r : real) : real 
+fetcharg fetcharg (i : int) : string 
+floor floor (r : real) : int 
+frealstr frealstr (r : real, width, fractionWidth : int) : string 
+getenv getenv (symbol : string) : string 
+index index (s , patt : string) : int 
+intreal intreal (i : int) : real 
+length length (s : string) : int 
+ln ln (r : real) : real 
+natreal natreal (n : nat) : real 
+ord ord (ch : char) : int 
+realstr realstr (r : real, width : int) : string 
+repeat repeat (s : string, i : int) : string 
+round round (r : real) : int 
+sign sign (r : real) : -1 .. 1 
+sin sin (r : real) : real 
+sind sind (r : real) : real 
+sizepic sizepic (x1, y1, x2, y2 : int) : int 
+sqrt sqrt (r : real) : real 
+strreal strreal (s : string) : real 
+strrealok strrealok (s : string) : boolean 
+tan tan (r : real) : real 
+tand tand (r : real) : real 
+whatdotcolor whatdotcolor (x, y : int) : int 
+whatdotcolour whatdotcolour (x, y : int) : int 

@@ -1,0 +1,10 @@
+red
+blue
+green
+brightred
+brightblue
+brightgreen
+white
+black
+picMerge
+picCopy

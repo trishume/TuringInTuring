@@ -1,0 +1,2 @@
+drawmapleleaf drawmapleleaf (x1, y1, x2, y2, Color : int) 
+drawoval drawoval (x, y, xRadius, yRadius, Color : int)

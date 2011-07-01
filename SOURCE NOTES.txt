@@ -1,0 +1,14 @@
+Some code in this project was not written by me. Here is what I didn't write.
+
+- everything in the collections folder except THash.t and Values.t
+- everything in the programs folder except 1-Features.t
+- everything in the gui/altgui folder except EditTextBoxBodyClass.t
+
+I made all the images except for the car pictures.
+
+I did not make any of the sounds.
+
+I used a 3rd party parser generator called ANTLR to generate the 12,000 line parser.
+However, I did write the 500 line grammar that it was generated from.
+
+I wrote a program to generate the turing files in the tdocparse folder that start with "gen"

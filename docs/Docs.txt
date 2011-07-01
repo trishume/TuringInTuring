@@ -1,0 +1,38 @@
+DOCUMENTATION
+
+This is a copy of the instructions in the readme. For more expansive docs, see ReadMe.txt
+
+HOW TO USE
+
+When you open the program you are presented with an editor.
+YOu can type your own code into the box and press run to execute it.
+The editor doesn't function entirely like a normal multi-line text box 
+because of the difficulty of coding one. Fun Fact: a good rich text editor is really
+hard to program because of problems like wrapping,sizing,scrolling,etc...
+
+You can also open a variety of sample programs that I have collected. 
+
+Click the Tour button in the editor to learn more.
+
+SUPPORTED CODE CONSTRUCTS
+
+-variables
+-functions and procedures
+-built in functions
+-loops and for loops
+-functions as variables
+-records
+-dynamic typing
+-conditions (if,elsif,else)
+-boolean logic (or,and,xor,not)
+-integer math (+,-,*,div,mod)
+-real math (+,-,*,div,mod)
+-equality (=,~=)
+-rudimentary error handling
+
+UNSUPPORTED FEATURES
+
+-arrays
+-automatic type promotion (int + real)
+-classes and objects
+-pointers

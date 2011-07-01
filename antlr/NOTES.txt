@@ -1,0 +1,5 @@
+this folder contains files used by the java parser generator that I am using. 
+
+The files that I wrote were the files defining the turing language TinT1.g and TinT2.g
+
+The output folders contains the generated code.

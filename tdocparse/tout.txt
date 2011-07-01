@@ -1,0 +1,531 @@
+class Builtin_buttonchoose
+    inherit ExecutableSymbol
+    import Builtin, IntSymbol, NewSym
+    body fcn Eval (params : array 1 .. * of ^Symbol) : ^Symbol
+    	Builtin.VerifyParams (upper (params), 1)
+
+    	sym0 := Builtin.ToInt (params(1))
+
+    	buttonchoose (sym0)
+
+    	result NewSym ()
+    end Eval
+end Builtin_buttonchoose
+class Builtin_buttonmoved
+    inherit ExecutableSymbol
+    import Builtin, IntSymbol, NewSym
+    body fcn Eval (params : array 1 .. * of ^Symbol) : ^Symbol
+    	Builtin.VerifyParams (upper (params), 1)
+
+    	sym0 := Builtin.ToInt (params(1))
+
+    	var res := buttonmoved (sym0)
+
+    	result Builtin.FromBool(res)
+    end Eval
+end Builtin_buttonmoved
+class Builtin_color
+    inherit ExecutableSymbol
+    import Builtin, IntSymbol, NewSym
+    body fcn Eval (params : array 1 .. * of ^Symbol) : ^Symbol
+    	Builtin.VerifyParams (upper (params), 1)
+
+    	sym0 := Builtin.ToInt (params(1))
+
+    	color (sym0)
+
+    	result NewSym ()
+    end Eval
+end Builtin_color
+class Builtin_colorback
+    inherit ExecutableSymbol
+    import Builtin, IntSymbol, NewSym
+    body fcn Eval (params : array 1 .. * of ^Symbol) : ^Symbol
+    	Builtin.VerifyParams (upper (params), 1)
+
+    	sym0 := Builtin.ToInt (params(1))
+
+    	colorback (sym0)
+
+    	result NewSym ()
+    end Eval
+end Builtin_colorback
+class Builtin_colour
+    inherit ExecutableSymbol
+    import Builtin, IntSymbol, NewSym
+    body fcn Eval (params : array 1 .. * of ^Symbol) : ^Symbol
+    	Builtin.VerifyParams (upper (params), 1)
+
+    	sym0 := Builtin.ToInt (params(1))
+
+    	colour (sym0)
+
+    	result NewSym ()
+    end Eval
+end Builtin_colour
+class Builtin_colourback
+    inherit ExecutableSymbol
+    import Builtin, IntSymbol, NewSym
+    body fcn Eval (params : array 1 .. * of ^Symbol) : ^Symbol
+    	Builtin.VerifyParams (upper (params), 1)
+
+    	sym0 := Builtin.ToInt (params(1))
+
+    	colourback (sym0)
+
+    	result NewSym ()
+    end Eval
+end Builtin_colourback
+class Builtin_delay
+    inherit ExecutableSymbol
+    import Builtin, IntSymbol, NewSym
+    body fcn Eval (params : array 1 .. * of ^Symbol) : ^Symbol
+    	Builtin.VerifyParams (upper (params), 1)
+
+    	sym0 := Builtin.ToInt (params(1))
+
+    	delay (sym0)
+
+    	result NewSym ()
+    end Eval
+end Builtin_delay
+class Builtin_drawarc
+    inherit ExecutableSymbol
+    import Builtin, IntSymbol, NewSym
+    body fcn Eval (params : array 1 .. * of ^Symbol) : ^Symbol
+    	Builtin.VerifyParams (upper (params), 7)
+
+    	sym0 := Builtin.ToInt (params(1))
+sym1 := Builtin.ToInt (params(2))
+sym2 := Builtin.ToInt (params(3))
+sym3 := Builtin.ToInt (params(4))
+sym4 := Builtin.ToInt (params(5))
+sym5 := Builtin.ToInt (params(6))
+sym6 := Builtin.ToInt (params(7))
+
+    	drawarc (sym0,sym1,sym2,sym3,sym4,sym5,sym6)
+
+    	result NewSym ()
+    end Eval
+end Builtin_drawarc
+class Builtin_drawbox
+    inherit ExecutableSymbol
+    import Builtin, IntSymbol, NewSym
+    body fcn Eval (params : array 1 .. * of ^Symbol) : ^Symbol
+    	Builtin.VerifyParams (upper (params), 5)
+
+    	sym0 := Builtin.ToInt (params(1))
+sym1 := Builtin.ToInt (params(2))
+sym2 := Builtin.ToInt (params(3))
+sym3 := Builtin.ToInt (params(4))
+sym4 := Builtin.ToInt (params(5))
+
+    	drawbox (sym0,sym1,sym2,sym3,sym4)
+
+    	result NewSym ()
+    end Eval
+end Builtin_drawbox
+class Builtin_drawdot
+    inherit ExecutableSymbol
+    import Builtin, IntSymbol, NewSym
+    body fcn Eval (params : array 1 .. * of ^Symbol) : ^Symbol
+    	Builtin.VerifyParams (upper (params), 3)
+
+    	sym0 := Builtin.ToInt (params(1))
+sym1 := Builtin.ToInt (params(2))
+sym2 := Builtin.ToInt (params(3))
+
+    	drawdot (sym0,sym1,sym2)
+
+    	result NewSym ()
+    end Eval
+end Builtin_drawdot
+class Builtin_drawfill
+    inherit ExecutableSymbol
+    import Builtin, IntSymbol, NewSym
+    body fcn Eval (params : array 1 .. * of ^Symbol) : ^Symbol
+    	Builtin.VerifyParams (upper (params), 4)
+
+    	sym0 := Builtin.ToInt (params(1))
+sym1 := Builtin.ToInt (params(2))
+sym2 := Builtin.ToInt (params(3))
+sym3 := Builtin.ToInt (params(4))
+
+    	drawfill (sym0,sym1,sym2,sym3)
+
+    	result NewSym ()
+    end Eval
+end Builtin_drawfill
+class Builtin_drawfillarc
+    inherit ExecutableSymbol
+    import Builtin, IntSymbol, NewSym
+    body fcn Eval (params : array 1 .. * of ^Symbol) : ^Symbol
+    	Builtin.VerifyParams (upper (params), 7)
+
+    	sym0 := Builtin.ToInt (params(1))
+sym1 := Builtin.ToInt (params(2))
+sym2 := Builtin.ToInt (params(3))
+sym3 := Builtin.ToInt (params(4))
+sym4 := Builtin.ToInt (params(5))
+sym5 := Builtin.ToInt (params(6))
+sym6 := Builtin.ToInt (params(7))
+
+    	drawfillarc (sym0,sym1,sym2,sym3,sym4,sym5,sym6)
+
+    	result NewSym ()
+    end Eval
+end Builtin_drawfillarc
+class Builtin_drawfillbox
+    inherit ExecutableSymbol
+    import Builtin, IntSymbol, NewSym
+    body fcn Eval (params : array 1 .. * of ^Symbol) : ^Symbol
+    	Builtin.VerifyParams (upper (params), 5)
+
+    	sym0 := Builtin.ToInt (params(1))
+sym1 := Builtin.ToInt (params(2))
+sym2 := Builtin.ToInt (params(3))
+sym3 := Builtin.ToInt (params(4))
+sym4 := Builtin.ToInt (params(5))
+
+    	drawfillbox (sym0,sym1,sym2,sym3,sym4)
+
+    	result NewSym ()
+    end Eval
+end Builtin_drawfillbox
+class Builtin_drawfillmapleleaf
+    inherit ExecutableSymbol
+    import Builtin, IntSymbol, NewSym
+    body fcn Eval (params : array 1 .. * of ^Symbol) : ^Symbol
+    	Builtin.VerifyParams (upper (params), 5)
+
+    	sym0 := Builtin.ToInt (params(1))
+sym1 := Builtin.ToInt (params(2))
+sym2 := Builtin.ToInt (params(3))
+sym3 := Builtin.ToInt (params(4))
+sym4 := Builtin.ToInt (params(5))
+
+    	drawfillmapleleaf (sym0,sym1,sym2,sym3,sym4)
+
+    	result NewSym ()
+    end Eval
+end Builtin_drawfillmapleleaf
+class Builtin_drawfilloval
+    inherit ExecutableSymbol
+    import Builtin, IntSymbol, NewSym
+    body fcn Eval (params : array 1 .. * of ^Symbol) : ^Symbol
+    	Builtin.VerifyParams (upper (params), 5)
+
+    	sym0 := Builtin.ToInt (params(1))
+sym1 := Builtin.ToInt (params(2))
+sym2 := Builtin.ToInt (params(3))
+sym3 := Builtin.ToInt (params(4))
+sym4 := Builtin.ToInt (params(5))
+
+    	drawfilloval (sym0,sym1,sym2,sym3,sym4)
+
+    	result NewSym ()
+    end Eval
+end Builtin_drawfilloval
+class Builtin_drawfillstar
+    inherit ExecutableSymbol
+    import Builtin, IntSymbol, NewSym
+    body fcn Eval (params : array 1 .. * of ^Symbol) : ^Symbol
+    	Builtin.VerifyParams (upper (params), 5)
+
+    	sym0 := Builtin.ToInt (params(1))
+sym1 := Builtin.ToInt (params(2))
+sym2 := Builtin.ToInt (params(3))
+sym3 := Builtin.ToInt (params(4))
+sym4 := Builtin.ToInt (params(5))
+
+    	drawfillstar (sym0,sym1,sym2,sym3,sym4)
+
+    	result NewSym ()
+    end Eval
+end Builtin_drawfillstar
+class Builtin_drawline
+    inherit ExecutableSymbol
+    import Builtin, IntSymbol, NewSym
+    body fcn Eval (params : array 1 .. * of ^Symbol) : ^Symbol
+    	Builtin.VerifyParams (upper (params), 5)
+
+    	sym0 := Builtin.ToInt (params(1))
+sym1 := Builtin.ToInt (params(2))
+sym2 := Builtin.ToInt (params(3))
+sym3 := Builtin.ToInt (params(4))
+sym4 := Builtin.ToInt (params(5))
+
+    	drawline (sym0,sym1,sym2,sym3,sym4)
+
+    	result NewSym ()
+    end Eval
+end Builtin_drawline
+class Builtin_drawmapleleaf
+    inherit ExecutableSymbol
+    import Builtin, IntSymbol, NewSym
+    body fcn Eval (params : array 1 .. * of ^Symbol) : ^Symbol
+    	Builtin.VerifyParams (upper (params), 5)
+
+    	sym0 := Builtin.ToInt (params(1))
+sym1 := Builtin.ToInt (params(2))
+sym2 := Builtin.ToInt (params(3))
+sym3 := Builtin.ToInt (params(4))
+sym4 := Builtin.ToInt (params(5))
+
+    	drawmapleleaf (sym0,sym1,sym2,sym3,sym4)
+
+    	result NewSym ()
+    end Eval
+end Builtin_drawmapleleaf
+class Builtin_drawoval
+    inherit ExecutableSymbol
+    import Builtin, IntSymbol, NewSym
+    body fcn Eval (params : array 1 .. * of ^Symbol) : ^Symbol
+    	Builtin.VerifyParams (upper (params), 5)
+
+    	sym0 := Builtin.ToInt (params(1))
+sym1 := Builtin.ToInt (params(2))
+sym2 := Builtin.ToInt (params(3))
+sym3 := Builtin.ToInt (params(4))
+sym4 := Builtin.ToInt (params(5))
+
+    	drawoval (sym0,sym1,sym2,sym3,sym4)
+
+    	result NewSym ()
+    end Eval
+end Builtin_drawoval
+class Builtin_drawstar
+    inherit ExecutableSymbol
+    import Builtin, IntSymbol, NewSym
+    body fcn Eval (params : array 1 .. * of ^Symbol) : ^Symbol
+    	Builtin.VerifyParams (upper (params), 5)
+
+    	sym0 := Builtin.ToInt (params(1))
+sym1 := Builtin.ToInt (params(2))
+sym2 := Builtin.ToInt (params(3))
+sym3 := Builtin.ToInt (params(4))
+sym4 := Builtin.ToInt (params(5))
+
+    	drawstar (sym0,sym1,sym2,sym3,sym4)
+
+    	result NewSym ()
+    end Eval
+end Builtin_drawstar
+class Builtin_eof
+    inherit ExecutableSymbol
+    import Builtin, IntSymbol, NewSym
+    body fcn Eval (params : array 1 .. * of ^Symbol) : ^Symbol
+    	Builtin.VerifyParams (upper (params), 1)
+
+    	sym0 := Builtin.ToInt (params(1))
+
+    	eof (sym0)
+
+    	result NewSym ()
+    end Eval
+end Builtin_eof
+class Builtin_fetcharg
+    inherit ExecutableSymbol
+    import Builtin, IntSymbol, NewSym
+    body fcn Eval (params : array 1 .. * of ^Symbol) : ^Symbol
+    	Builtin.VerifyParams (upper (params), 1)
+
+    	sym0 := Builtin.ToInt (params(1))
+
+    	var res := fetcharg (sym0)
+
+    	result Builtin.FromInt(res)
+    end Eval
+end Builtin_fetcharg
+class Builtin_getenv
+    inherit ExecutableSymbol
+    import Builtin, IntSymbol, NewSym
+    body fcn Eval (params : array 1 .. * of ^Symbol) : ^Symbol
+    	Builtin.VerifyParams (upper (params), 1)
+
+    	sym0 := Builtin.ToInt (params(1))
+
+    	var res := getenv (sym0)
+
+    	result Builtin.FromInt(res)
+    end Eval
+end Builtin_getenv
+class Builtin_index
+    inherit ExecutableSymbol
+    import Builtin, IntSymbol, NewSym
+    body fcn Eval (params : array 1 .. * of ^Symbol) : ^Symbol
+    	Builtin.VerifyParams (upper (params), 2)
+
+    	sym0 := Builtin.ToInt (params(1))
+sym1 := Builtin.ToInt (params(2))
+
+    	var res := index (sym0,sym1)
+
+    	result Builtin.FromInt(res)
+    end Eval
+end Builtin_index
+class Builtin_length
+    inherit ExecutableSymbol
+    import Builtin, IntSymbol, NewSym
+    body fcn Eval (params : array 1 .. * of ^Symbol) : ^Symbol
+    	Builtin.VerifyParams (upper (params), 1)
+
+    	sym0 := Builtin.ToInt (params(1))
+
+    	var res := length (sym0)
+
+    	result Builtin.FromInt(res)
+    end Eval
+end Builtin_length
+class Builtin_locate
+    inherit ExecutableSymbol
+    import Builtin, IntSymbol, NewSym
+    body fcn Eval (params : array 1 .. * of ^Symbol) : ^Symbol
+    	Builtin.VerifyParams (upper (params), 2)
+
+    	sym0 := Builtin.ToInt (params(1))
+sym1 := Builtin.ToInt (params(2))
+
+    	locate (sym0,sym1)
+
+    	result NewSym ()
+    end Eval
+end Builtin_locate
+class Builtin_locatexy
+    inherit ExecutableSymbol
+    import Builtin, IntSymbol, NewSym
+    body fcn Eval (params : array 1 .. * of ^Symbol) : ^Symbol
+    	Builtin.VerifyParams (upper (params), 2)
+
+    	sym0 := Builtin.ToInt (params(1))
+sym1 := Builtin.ToInt (params(2))
+
+    	locatexy (sym0,sym1)
+
+    	result NewSym ()
+    end Eval
+end Builtin_locatexy
+class Builtin_parallelput
+    inherit ExecutableSymbol
+    import Builtin, IntSymbol, NewSym
+    body fcn Eval (params : array 1 .. * of ^Symbol) : ^Symbol
+    	Builtin.VerifyParams (upper (params), 1)
+
+    	sym0 := Builtin.ToInt (params(1))
+
+    	parallelput (sym0)
+
+    	result NewSym ()
+    end Eval
+end Builtin_parallelput
+class Builtin_play
+    inherit ExecutableSymbol
+    import Builtin, IntSymbol, NewSym
+    body fcn Eval (params : array 1 .. * of ^Symbol) : ^Symbol
+    	Builtin.VerifyParams (upper (params), 1)
+
+    	sym0 := Builtin.ToInt (params(1))
+
+    	play (sym0)
+
+    	result NewSym ()
+    end Eval
+end Builtin_play
+class Builtin_repeat
+    inherit ExecutableSymbol
+    import Builtin, IntSymbol, NewSym
+    body fcn Eval (params : array 1 .. * of ^Symbol) : ^Symbol
+    	Builtin.VerifyParams (upper (params), 2)
+
+    	sym0 := Builtin.ToInt (params(1))
+sym1 := Builtin.ToInt (params(2))
+
+    	var res := repeat (sym0,sym1)
+
+    	result Builtin.FromInt(res)
+    end Eval
+end Builtin_repeat
+class Builtin_setscreen
+    inherit ExecutableSymbol
+    import Builtin, IntSymbol, NewSym
+    body fcn Eval (params : array 1 .. * of ^Symbol) : ^Symbol
+    	Builtin.VerifyParams (upper (params), 1)
+
+    	sym0 := Builtin.ToInt (params(1))
+
+    	setscreen (sym0)
+
+    	result NewSym ()
+    end Eval
+end Builtin_setscreen
+class Builtin_sizepic
+    inherit ExecutableSymbol
+    import Builtin, IntSymbol, NewSym
+    body fcn Eval (params : array 1 .. * of ^Symbol) : ^Symbol
+    	Builtin.VerifyParams (upper (params), 4)
+
+    	sym0 := Builtin.ToInt (params(1))
+sym1 := Builtin.ToInt (params(2))
+sym2 := Builtin.ToInt (params(3))
+sym3 := Builtin.ToInt (params(4))
+
+    	var res := sizepic (sym0,sym1,sym2,sym3)
+
+    	result Builtin.FromInt(res)
+    end Eval
+end Builtin_sizepic
+class Builtin_sound
+    inherit ExecutableSymbol
+    import Builtin, IntSymbol, NewSym
+    body fcn Eval (params : array 1 .. * of ^Symbol) : ^Symbol
+    	Builtin.VerifyParams (upper (params), 2)
+
+    	sym0 := Builtin.ToInt (params(1))
+sym1 := Builtin.ToInt (params(2))
+
+    	sound (sym0,sym1)
+
+    	result NewSym ()
+    end Eval
+end Builtin_sound
+class Builtin_strrealok
+    inherit ExecutableSymbol
+    import Builtin, IntSymbol, NewSym
+    body fcn Eval (params : array 1 .. * of ^Symbol) : ^Symbol
+    	Builtin.VerifyParams (upper (params), 1)
+
+    	sym0 := Builtin.ToInt (params(1))
+
+    	var res := strrealok (sym0)
+
+    	result Builtin.FromBool(res)
+    end Eval
+end Builtin_strrealok
+class Builtin_whatdotcolor
+    inherit ExecutableSymbol
+    import Builtin, IntSymbol, NewSym
+    body fcn Eval (params : array 1 .. * of ^Symbol) : ^Symbol
+    	Builtin.VerifyParams (upper (params), 2)
+
+    	sym0 := Builtin.ToInt (params(1))
+sym1 := Builtin.ToInt (params(2))
+
+    	var res := whatdotcolor (sym0,sym1)
+
+    	result Builtin.FromInt(res)
+    end Eval
+end Builtin_whatdotcolor
+class Builtin_whatdotcolour
+    inherit ExecutableSymbol
+    import Builtin, IntSymbol, NewSym
+    body fcn Eval (params : array 1 .. * of ^Symbol) : ^Symbol
+    	Builtin.VerifyParams (upper (params), 2)
+
+    	sym0 := Builtin.ToInt (params(1))
+sym1 := Builtin.ToInt (params(2))
+
+    	var res := whatdotcolour (sym0,sym1)
+
+    	result Builtin.FromInt(res)
+    end Eval
+end Builtin_whatdotcolour

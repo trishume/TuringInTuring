@@ -1,0 +1,3 @@
+the only files in this folder that I wrote were THash.t and Values.t
+
+The rest came from a turing collections library.

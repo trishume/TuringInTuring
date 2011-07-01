@@ -1,0 +1,7 @@
+(INSTRUCTIONS 
+(VARDECL bob int 1000) 
+(:= ed (- (+ (* bob 9) 1000) 999)) 
+(FUNCDEF coolstuff (FORMALARGS (int num)) (INSTRUCTIONS (put "It's over, 9000!")))
+(FUNCDEF retself (FORMALARGS (auto x)) (INSTRUCTIONS (result x))) 
+(if (> ed 9000) (INSTRUCTIONS (CALL coolstuff (CALL retself ed))))
+)
